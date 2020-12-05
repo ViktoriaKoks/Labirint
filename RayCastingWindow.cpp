@@ -81,7 +81,7 @@ void RayCastingWindow::render()
 
 		draw_textured_col(col, h, tx);
 	}
-	SDL_SetRenderDrawBlendMode(_renderer.get(), SDL_BLENDMODE_BLEND);//ключаем смешевание цветов чтобы работала прозрачность
+	SDL_SetRenderDrawBlendMode(_renderer.get(), SDL_BLENDMODE_BLEND);
 	SDL_SetRenderDrawColor(_renderer.get(), 255, 255, 255, 90);
 	for(int y = 0; y < _map->height(); ++y)
 		for(int x = 0; x < _map->width(); ++x){
